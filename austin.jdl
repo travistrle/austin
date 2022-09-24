@@ -1,0 +1,40 @@
+application {
+  config {
+    baseName austin,
+    applicationType monolith,
+    clientFramework react
+    packageName xyz.onegrid.austin,
+    authenticationType jwt,
+    prodDatabaseType postgresql,
+    devDatabaseType postgresql,
+    serverPort 9999,
+    buildTool gradle,
+    languages [en, vi]
+  }
+  entities *
+}
+
+entity Todo {
+  task String required,
+    scheduledTime String required,
+    validUntil Instant,
+    createdDate Instant,
+    lastModifiedDate Instant,
+    createdBy Long,
+    lastModifiedBy Long
+}
+
+enum Group {
+  ADMIN, MODERATOR, USER
+}
+
+entity OneGridUser {
+  email String required,
+  password String required,
+  dateOfBirth Instant,
+  group Group
+}
+
+relationship ManyToMany {
+  Todo{users required} to OneGridUser{todos required}
+}
