@@ -1,0 +1,56 @@
+{
+  "generator-jhipster": {
+    "applicationIndex": 0,
+    "applicationType": "microservice",
+    "authenticationType": "jwt",
+    "baseName": "austin",
+    "blueprints": [
+      {
+        "name": "generator-jhipster-kotlin",
+        "version": "1.15.0"
+      }
+    ],
+    "buildTool": "gradle",
+    "cacheProvider": "ehcache",
+    "clientPackageManager": "npm",
+    "creationTimestamp": 1663989431781,
+    "databaseType": "sql",
+    "devDatabaseType": "postgresql",
+    "dtoSuffix": "DTO",
+    "enableGradleEnterprise": false,
+    "enableHibernateCache": true,
+    "enableSwaggerCodegen": false,
+    "enableTranslation": true,
+    "entities": ["Todo", "OneGridUser"],
+    "entitySuffix": "",
+    "gradleEnterpriseHost": "",
+    "jhiPrefix": "jhi",
+    "jhipsterVersion": "7.8.1",
+    "jwtSecretKey": "Njg3MTMwOGYwNjZjODNiMmUwOWExYTU3YTg3NDk0MDQ2YjgyNDM3OGIwMzI5ZDVmNDU3ZWRiMzY0MjcyM2QwODMxMGFkOGM4MjRhM2EyYWVlNzFkMGYzYzlhY2FmOWVkNzMwYjE0NTAxMmNlYzc3M2RlZDdmOTIzMzRkZDhmMDY=",
+    "languages": ["en", "vi"],
+    "lastLiquibaseTimestamp": 1663989551000,
+    "messageBroker": false,
+    "nativeLanguage": "en",
+    "otherModules": [
+      {
+        "name": "generator-jhipster-kotlin",
+        "version": "1.15.0"
+      }
+    ],
+    "packageFolder": "xyz/onegrid/austin",
+    "packageName": "xyz.onegrid.austin",
+    "pages": [],
+    "prodDatabaseType": "postgresql",
+    "reactive": false,
+    "searchEngine": false,
+    "serverPort": "9999",
+    "serviceDiscoveryType": "eureka",
+    "skipCheckLengthOfIdentifier": false,
+    "skipClient": true,
+    "skipFakeData": false,
+    "skipUserManagement": true,
+    "testFrameworks": [],
+    "websocket": false,
+    "withAdminUi": false
+  }
+}

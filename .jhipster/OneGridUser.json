@@ -1,0 +1,42 @@
+{
+  "applications": ["austin"],
+  "changelogDate": "20220924031911",
+  "clientRootFolder": "austin",
+  "databaseType": "sql",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "one_grid_user",
+  "fields": [
+    {
+      "fieldName": "email",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "dateOfBirth",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "group",
+      "fieldType": "Group",
+      "fieldValues": "ADMIN,MODERATOR,USER"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "microserviceName": "austin",
+  "name": "OneGridUser",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "todo",
+      "otherEntityRelationshipName": "users",
+      "ownerSide": false,
+      "relationshipName": "todos",
+      "relationshipType": "many-to-many",
+      "relationshipValidateRules": "required"
+    }
+  ],
+  "service": "no"
+}
