@@ -24,9 +24,10 @@ postgres=# grant all privileges on database austin to austinuser;
 ### Start service
 ```bash
 npm install
-npm run webapp:build 
-./gradlew
-
 ./gradlew -x webapp
 npm start
+
+npm install
+npm run webapp:build 
+./gradlew
 ```
