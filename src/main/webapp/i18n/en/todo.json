@@ -1,0 +1,31 @@
+{
+  "austinApp": {
+    "todo": {
+      "home": {
+        "title": "Todos",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Todo",
+        "createOrEditLabel": "Create or edit a Todo",
+        "notFound": "No Todos found"
+      },
+      "created": "A new Todo is created with identifier {{ param }}",
+      "updated": "A Todo is updated with identifier {{ param }}",
+      "deleted": "A Todo is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Todo {{ id }}?"
+      },
+      "detail": {
+        "title": "Todo"
+      },
+      "id": "ID",
+      "task": "Task",
+      "scheduledTime": "Scheduled Time",
+      "validUntil": "Valid Until",
+      "createdDate": "Created Date",
+      "lastModifiedDate": "Last Modified Date",
+      "createdBy": "Created By",
+      "lastModifiedBy": "Last Modified By",
+      "users": "Users"
+    }
+  }
+}
