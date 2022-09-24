@@ -10,6 +10,8 @@ application {
     serverPort 9999,
     buildTool gradle,
     languages [en, vi]
+    enableSwaggerCodegen true
+    cacheProvider caffeine
   }
   entities *
 }
@@ -24,17 +26,9 @@ entity Todo {
     lastModifiedBy Long
 }
 
-enum Group {
-  ADMIN, MODERATOR, USER
-}
-
-entity OneGridUser {
-  email String required,
-  password String required,
-  dateOfBirth Instant,
-  group Group
+entity User {
 }
 
 relationship ManyToMany {
-  Todo{users required} to OneGridUser{todos required}
+  Todo{users required} to User{todos required}
 }
